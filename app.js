@@ -43,6 +43,9 @@ board.on('ready', function() {
       request.on('end',function(){
         params = qs.parse(body);
         console.log("Passkey sent: " + params.passkey);
+
+        board.digitalWrite(7, "2713");
+
         render('index.html', 'text/html');
       });
     }
