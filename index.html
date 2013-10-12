@@ -7,6 +7,20 @@
     <link rel="stylesheet" type="text/css" href="css/screen.css">
   </head>
   <body>
+    <h1>Gate Opener</h1>
+
+    <section id="main">
+      <form name="open-gate" action="#" method="post">
+        <p class="passkey-field">
+          <label for="passkey">Enter passkey:</label>
+          <input type="number" name="passkey" id="passkey" maxlength="4">
+        </p>
+        <p class="open-button">
+          <input type="submit" name="open-that-gate" id="open-that-gate" value="Open that gate!">
+        </p>
+      </form>
+    </section>
+
     <script src="js/jquery.js"></script>
     <!-- <script src="js/handlebars.js"></script> -->
     <!-- <script src="js/underscore.js"></script> -->

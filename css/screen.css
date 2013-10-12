@@ -1,4 +1,58 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Ubuntu, 'Lucida Grande', sans-serif;
+  background: #ccc;
+  text-align: center;
+}
+
+h1 {
+  padding: 20px 0;
+  color: #ccc;
+  font-size: 20px;
+  font-weight: bold;
   background: #222;
 }
+
+section#main {
+  display: block;
+  margin: 15% auto 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+p.passkey-field {
+  margin-bottom: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+input#passkey {
+  width: 100%;
+  font-size: 24px;
+  padding: 10px;
+  letter-spacing: 1em;
+  text-align: center;
+}
+
+input#open-that-gate {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #222;
+  border: none;
+  color: #ccc;
+  font-size: 24px;
+  border-radius: 15px;
+}
+
