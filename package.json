@@ -1,0 +1,9 @@
+{
+  "name": "gate-opener",
+  "description": "Opens gates",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "serialport": "1.2.x"
+  }
+}
