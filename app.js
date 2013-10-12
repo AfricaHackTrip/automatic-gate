@@ -3,6 +3,7 @@ var board   = new arduino.Board({debug: true});
 var http    = require('http');
 var url     = require('url');
 var fs      = require('fs');
+var qs      = require('querystring');
 
 board.on('ready', function() {
   console.log('Connected to Arduino board');
@@ -35,7 +36,15 @@ board.on('ready', function() {
     }
 
     if (method === 'POST') {
-      console.log('posted sth');
+      var body = '';
+      request.on('data', function (data) {
+        body +=data;
+      });
+      request.on('end',function(){
+        params = qs.parse(body);
+        console.log("Passkey sent: " + params.passkey);
+        render('index.html', 'text/html');
+      });
     }
 
   }).listen(1337, '127.0.0.1');
