@@ -1,12 +1,19 @@
-var arduino = require('duino');
-var board   = new arduino.Board({debug: true});
 var http    = require('http');
 var url     = require('url');
 var fs      = require('fs');
 var qs      = require('querystring');
 
-board.on('ready', function() {
-  console.log('Connected to Arduino board');
+var SerialPort = require("serialport").SerialPort;
+var serialPort = new SerialPort("/dev/tty.usbserial-A700ew3I", {
+  baudrate: 9600
+});
+
+serialPort.on("open", function () {
+  console.log('open');
+  serialPort.on('data', function(data) {
+    console.log('data received: ' + data);
+  });
+
 
   console.log('Starting web server...');
   http.createServer(function (request, response) {
@@ -44,7 +51,10 @@ board.on('ready', function() {
         params = qs.parse(body);
         console.log("Passkey sent: " + params.passkey);
 
-        board.digitalWrite(7, "2713");
+        serialPort.write(params.passkey, function(err, results) {
+          console.log('err ' + err);
+          console.log('results ' + results);
+        });
 
         render('index.html', 'text/html');
       });
@@ -52,9 +62,5 @@ board.on('ready', function() {
 
   }).listen(1337, '127.0.0.1');
   console.log('Server running at http://127.0.0.1:1337/');
+
 });
-
-// board.on('data', function(m) {
-//   console.log(m);
-// });
-
