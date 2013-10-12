@@ -1,9 +1,10 @@
-var http    = require('http');
-var url     = require('url');
-var fs      = require('fs');
-var qs      = require('querystring');
-
+var http       = require('http');
+var url        = require('url');
+var fs         = require('fs');
+var qs         = require('querystring');
 var SerialPort = require("serialport").SerialPort;
+
+// Change the serial file descriptor to match yours
 var serialPort = new SerialPort("/dev/tty.usbserial-A700ew3I", {
   baudrate: 9600
 });
@@ -13,7 +14,6 @@ serialPort.on("open", function () {
   serialPort.on('data', function(data) {
     console.log('data received: ' + data);
   });
-
 
   console.log('Starting web server...');
   http.createServer(function (request, response) {
@@ -62,5 +62,4 @@ serialPort.on("open", function () {
 
   }).listen(1337);
   console.log('Server running at http://127.0.0.1:1337/');
-
 });
