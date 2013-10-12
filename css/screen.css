@@ -8,16 +8,18 @@
 
 body {
   font-family: Ubuntu, 'Lucida Grande', sans-serif;
-  background: #ccc;
+  background: #C7AB8C;
   text-align: center;
+  background: #C7AB8C;
+  color: #47331D;
 }
 
 h1 {
   padding: 20px 0;
-  color: #ccc;
   font-size: 20px;
   font-weight: bold;
-  background: #222;
+  background: #47331D;
+  color: #C7AB8C;
 }
 
 section#main {
@@ -48,11 +50,13 @@ input#passkey {
 input#open-that-gate {
   display: block;
   width: 100%;
-  padding: 10px;
-  background: #222;
+  padding: 12px;
+  background: #0A7700;
+  color: #ABE47F;
   border: none;
-  color: #ccc;
-  font-size: 24px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   border-radius: 15px;
 }
 
