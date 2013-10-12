@@ -1,0 +1,1151 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.12/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@1.2.32
+3 info using node@v0.10.12
+4 verbose read json /Users/basti/src/gate-opener/package.json
+5 warn package.json gate-opener@0.0.1 No repository field.
+6 warn package.json gate-opener@0.0.1 No readme data.
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/Users/basti/src/gate-opener', [ 'express', 'duino' ] ]
+9 verbose from cache /Users/basti/src/gate-opener/package.json
+10 info preinstall gate-opener@0.0.1
+11 verbose from cache /Users/basti/src/gate-opener/package.json
+12 verbose readDependencies using package.json deps
+13 verbose cache add [ 'duino@0.0.8', null ]
+14 verbose cache add name=undefined spec="duino@0.0.8" args=["duino@0.0.8",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'duino@0.0.8',
+15 verbose parsed url   path: 'duino@0.0.8',
+15 verbose parsed url   href: 'duino@0.0.8' }
+16 verbose cache add name="duino" spec="0.0.8" args=["duino","0.0.8"]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: '0.0.8',
+17 verbose parsed url   path: '0.0.8',
+17 verbose parsed url   href: '0.0.8' }
+18 verbose addNamed [ 'duino', '0.0.8' ]
+19 verbose addNamed [ '0.0.8', '0.0.8' ]
+20 verbose cache add [ 'express@3.x', null ]
+21 verbose cache add name=undefined spec="express@3.x" args=["express@3.x",null]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: 'express@3.x',
+22 verbose parsed url   path: 'express@3.x',
+22 verbose parsed url   href: 'express@3.x' }
+23 verbose cache add name="express" spec="3.x" args=["express","3.x"]
+24 verbose parsed url { protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: '3.x',
+24 verbose parsed url   path: '3.x',
+24 verbose parsed url   href: '3.x' }
+25 verbose addNamed [ 'express', '3.x' ]
+26 verbose addNamed [ null, '>=3.0.0- <4.0.0-' ]
+27 silly lockFile a1906a38-duino-0-0-8 duino@0.0.8
+28 verbose lock duino@0.0.8 /Users/basti/.npm/a1906a38-duino-0-0-8.lock
+29 silly lockFile 3a341b85-express-3-x express@3.x
+30 verbose lock express@3.x /Users/basti/.npm/3a341b85-express-3-x.lock
+31 verbose url raw duino/0.0.8
+32 verbose url resolving [ 'https://registry.npmjs.org/', './duino/0.0.8' ]
+33 verbose url resolved https://registry.npmjs.org/duino/0.0.8
+34 info trying registry request attempt 1 at 14:01:10
+35 verbose etag "9U65Y994YJ9TFZ46HIHWRWCWZ"
+36 http GET https://registry.npmjs.org/duino/0.0.8
+37 silly addNameRange { name: 'express', range: '>=3.0.0- <4.0.0-', hasData: false }
+38 verbose url raw express
+39 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+40 verbose url resolved https://registry.npmjs.org/express
+41 info trying registry request attempt 1 at 14:01:10
+42 verbose etag "6CGAPLRNIFJ2VVZJMZP80P2P7"
+43 http GET https://registry.npmjs.org/express
+44 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+45 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+46 info trying registry request attempt 2 at 14:01:50
+47 verbose etag "9U65Y994YJ9TFZ46HIHWRWCWZ"
+48 http GET https://registry.npmjs.org/duino/0.0.8
+49 info trying registry request attempt 2 at 14:01:50
+50 verbose etag "6CGAPLRNIFJ2VVZJMZP80P2P7"
+51 http GET https://registry.npmjs.org/express
+52 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+53 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+54 info trying registry request attempt 3 at 14:03:20
+55 verbose etag "9U65Y994YJ9TFZ46HIHWRWCWZ"
+56 http GET https://registry.npmjs.org/duino/0.0.8
+57 info trying registry request attempt 3 at 14:03:20
+58 verbose etag "6CGAPLRNIFJ2VVZJMZP80P2P7"
+59 http GET https://registry.npmjs.org/express
+60 silly registry.get cb [ 304, undefined ]
+61 verbose etag duino/0.0.8 from cache
+62 verbose read json /Users/basti/.npm/duino/0.0.8/package/package.json
+63 silly lockFile a1906a38-duino-0-0-8 duino@0.0.8
+64 silly lockFile a1906a38-duino-0-0-8 duino@0.0.8
+65 silly registry.get cb [ 304, undefined ]
+66 verbose etag express from cache
+67 silly addNameRange number 2 { name: 'express', range: '>=3.0.0- <4.0.0-', hasData: true }
+68 silly addNameRange versions [ 'express',
+68 silly addNameRange   [ '0.14.0',
+68 silly addNameRange     '0.14.1',
+68 silly addNameRange     '1.0.0',
+68 silly addNameRange     '1.0.1',
+68 silly addNameRange     '1.0.2',
+68 silly addNameRange     '1.0.3',
+68 silly addNameRange     '1.0.4',
+68 silly addNameRange     '1.0.5',
+68 silly addNameRange     '1.0.6',
+68 silly addNameRange     '1.0.7',
+68 silly addNameRange     '1.0.8',
+68 silly addNameRange     '2.0.0',
+68 silly addNameRange     '2.1.0',
+68 silly addNameRange     '2.1.1',
+68 silly addNameRange     '2.2.0',
+68 silly addNameRange     '2.2.1',
+68 silly addNameRange     '2.2.2',
+68 silly addNameRange     '2.3.0',
+68 silly addNameRange     '2.3.1',
+68 silly addNameRange     '2.3.2',
+68 silly addNameRange     '2.3.3',
+68 silly addNameRange     '2.3.4',
+68 silly addNameRange     '2.3.5',
+68 silly addNameRange     '2.3.6',
+68 silly addNameRange     '2.3.7',
+68 silly addNameRange     '2.3.8',
+68 silly addNameRange     '2.3.9',
+68 silly addNameRange     '2.3.10',
+68 silly addNameRange     '2.3.11',
+68 silly addNameRange     '2.3.12',
+68 silly addNameRange     '2.4.0',
+68 silly addNameRange     '2.4.1',
+68 silly addNameRange     '2.4.2',
+68 silly addNameRange     '2.4.3',
+68 silly addNameRange     '2.4.4',
+68 silly addNameRange     '2.4.5',
+68 silly addNameRange     '2.4.6',
+68 silly addNameRange     '2.4.7',
+68 silly addNameRange     '2.5.0',
+68 silly addNameRange     '2.5.1',
+68 silly addNameRange     '2.5.2',
+68 silly addNameRange     '2.5.3',
+68 silly addNameRange     '2.5.4',
+68 silly addNameRange     '2.5.5',
+68 silly addNameRange     '2.5.6',
+68 silly addNameRange     '2.5.7',
+68 silly addNameRange     '2.5.8',
+68 silly addNameRange     '2.5.9',
+68 silly addNameRange     '2.5.10',
+68 silly addNameRange     '2.5.11',
+68 silly addNameRange     '3.0.0',
+68 silly addNameRange     '3.0.1',
+68 silly addNameRange     '3.0.2',
+68 silly addNameRange     '3.0.3',
+68 silly addNameRange     '3.0.4',
+68 silly addNameRange     '3.0.5',
+68 silly addNameRange     '3.0.6',
+68 silly addNameRange     '3.1.0',
+68 silly addNameRange     '3.1.1',
+68 silly addNameRange     '3.1.2',
+68 silly addNameRange     '3.2.0',
+68 silly addNameRange     '3.2.1',
+68 silly addNameRange     '3.2.2',
+68 silly addNameRange     '3.2.3',
+68 silly addNameRange     '3.2.4',
+68 silly addNameRange     '3.2.5',
+68 silly addNameRange     '3.2.6',
+68 silly addNameRange     '3.3.0',
+68 silly addNameRange     '3.3.1',
+68 silly addNameRange     '3.3.2',
+68 silly addNameRange     '3.3.3',
+68 silly addNameRange     '3.3.4',
+68 silly addNameRange     '3.3.5',
+68 silly addNameRange     '3.3.6',
+68 silly addNameRange     '1.0.0-beta',
+68 silly addNameRange     '1.0.0-beta2',
+68 silly addNameRange     '1.0.0-rc',
+68 silly addNameRange     '1.0.0-rc2',
+68 silly addNameRange     '1.0.0-rc3',
+68 silly addNameRange     '1.0.0-rc4',
+68 silly addNameRange     '2.0.0-beta',
+68 silly addNameRange     '2.0.0-beta2',
+68 silly addNameRange     '2.0.0-beta3',
+68 silly addNameRange     '2.0.0-rc',
+68 silly addNameRange     '2.0.0-rc2',
+68 silly addNameRange     '2.0.0-rc3',
+68 silly addNameRange     '3.0.0-alpha1',
+68 silly addNameRange     '3.0.0-alpha2',
+68 silly addNameRange     '3.0.0-alpha3',
+68 silly addNameRange     '3.0.0-alpha4',
+68 silly addNameRange     '3.0.0-alpha5',
+68 silly addNameRange     '3.0.0-beta1',
+68 silly addNameRange     '3.0.0-beta2',
+68 silly addNameRange     '3.0.0-beta3',
+68 silly addNameRange     '3.0.0-beta4',
+68 silly addNameRange     '3.0.0-beta6',
+68 silly addNameRange     '3.0.0-beta7',
+68 silly addNameRange     '3.0.0-rc1',
+68 silly addNameRange     '3.0.0-rc2',
+68 silly addNameRange     '3.0.0-rc3',
+68 silly addNameRange     '3.0.0-rc4',
+68 silly addNameRange     '3.0.0-rc5',
+68 silly addNameRange     '3.3.7',
+68 silly addNameRange     '3.3.8',
+68 silly addNameRange     '3.4.0' ] ]
+69 verbose addNamed [ 'express', '3.4.0' ]
+70 verbose addNamed [ '3.4.0', '3.4.0' ]
+71 silly lockFile 86194427-express-3-4-0 express@3.4.0
+72 verbose lock express@3.4.0 /Users/basti/.npm/86194427-express-3-4-0.lock
+73 verbose read json /Users/basti/.npm/express/3.4.0/package/package.json
+74 silly lockFile 86194427-express-3-4-0 express@3.4.0
+75 silly lockFile 86194427-express-3-4-0 express@3.4.0
+76 silly lockFile 3a341b85-express-3-x express@3.x
+77 silly lockFile 3a341b85-express-3-x express@3.x
+78 silly resolved [ { author:
+78 silly resolved      { name: 'Cam Pedersen',
+78 silly resolved        email: 'diffference@gmail.com',
+78 silly resolved        url: 'http://campedersen.com/' },
+78 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+78 silly resolved     name: 'duino',
+78 silly resolved     description: 'Arduino framework for mad scientists',
+78 silly resolved     version: '0.0.8',
+78 silly resolved     keywords: [ 'arduino', 'serial', 'framework' ],
+78 silly resolved     repository: { type: 'git', url: 'git://github.com/ecto/duino.git' },
+78 silly resolved     main: 'index.js',
+78 silly resolved     engines: { node: '*' },
+78 silly resolved     dependencies: { serialport: '*', colors: '*' },
+78 silly resolved     devDependencies: {},
+78 silly resolved     readme: '# duino\n\nA framework for working with Arduinos in node.js\n\n![arduino](http://i.imgur.com/eFq84.jpg)\n\n# install\n\n    npm install duino\n\n# usage\n\n````javascript\nvar arduino = require(\'duino\'),\n    board = new arduino.Board();\n\nvar led = new arduino.Led({\n  board: board,\n  pin: 13\n});\n\nled.blink();\n````\n\n# what ಠ_ಠ\n\nThe way this works is simple (in theory, not in practice). The Arduino listens for low-level signals over a serial port, while we abstract all of the logic on the Node side.\n\n1.  Plug in your Arduino\n2.  Upload the C code at `./src/du.ino` to it\n3.  Write a simple **duino** script\n4.  ?????\n5.  Profit!\n\n# libraries\n\n##board\n\nRight now, the board library will attempt to autodiscover the Arduino. I\'m going to make it configurable, don\'t worry.\n\n````javascript\nvar board = new arduino.Board({\n  debug: true\n});\n````\n\nDebug mode is off by default. Turning it on will enable verbose logging in your terminal, and tell the Arduino board to echo everthing back to you. You will get something like this:\n\n![debug](http://i.imgur.com/gBYZA.png)\n\nThe **board** object is an EventEmitter. You can listen for the following events:\n\n* `data` messages from the serial port, delimited by newlines\n* `connected` when the serial port has connected\n* `ready` when all internal post-connection logic has finished and the board is ready to use\n\n````javascript\nboard.on(\'ready\', function(){\n  // do stuff\n});\n\nboard.on(\'data\', function(m){\n  console.log(m);\n}\n````\n\n###board.serial\n\nLow-level access to the serial connection to the board\n\n###board.write(msg)\n\nWrite a message to the board, wrapped in predefined delimiters (! and .)\n\n###board.pinMode(pin, mode)\n\nSet the mode for a pin. `mode` is either `\'in\'` or `\'out\'`\n\n###board.digitalWrite(pin, val)\n\nWrite one of the following to a pin:\n\n####board.HIGH and board.LOW\n\nConstants for use in low-level digital writes\n\n###board.analogWrite(pin,val)\n\nWrite a value between 0-255 to a pin\n\n##led\n\n````javascript\nvar led = new arduino.Led({\n  board: board,\n  pin: 13\n});\n````\n\nPin will default to 13.\n\n###led.on()\n\nTurn the LED on\n\n###led.off()\n\nTurn the LED off\n\n###led.blink(interval)\n\nBlink the LED at `interval` ms. Defaults to 1000\n\n###led.fade(interval)\n\nFade the to full brightness then back to minimal brightness in `interval` ms. Defaults to 2000\n\n###led.bright\n\nCurrent brightness of the LED\n\n##lcd\n\nThis is a port of the [LiquidCrystal library](http://arduino.cc/en/Reference/LiquidCrystal) into JavaScript. Note that communicating with the LCD requires use of the synchronous `board.delay()` busy loop which will block other node.js events from being processed for several milliseconds at a time. (This could be converted to pause a board-level buffered message queue instead.)\n\n````javascript\nvar lcd = new d.LCD({\n  board: board,\n  pins: {rs:12, rw:11, e:10, data:[5, 4, 3, 2]}\n});\nlcd.begin(16, 2);\nlcd.print("Hello Internet.");\n````\n\nIn `options`, the "pins" field can either be an array matching a call to any of the [LiquidCrystal constructors](http://arduino.cc/en/Reference/LiquidCrystalConstructor) or an object with "rs", "rw" (optional), "e" and a 4- or 8-long array of "data" pins. Pins will default to `[12, 11, 5, 4, 3, 2]` if not provided.\n\n###lcd.begin(), lcd.clear(), lcd.home(), lcd.setCursor(), lcd.scrollDisplayLeft(), lcd.scrollDisplayRight()\n\nThese should behave the same as their counterparts in the [LiquidCrystal library](http://arduino.cc/en/Reference/LiquidCrystal).\n\n###lcd.display(on), lcd.cursor(on), lcd.blink(on), lcd.autoscroll(on)\n\nThese are similar to the methods in the [LiquidCrystal library](http://arduino.cc/en/Reference/LiquidCrystal), however they can take an optional boolean parameter. If true or not provided, the setting is enabled. If false, the setting is disabled. For compatibility `.noDisplay()`, `.noCursor()`, `.noBlink()` and `.noAutoscroll()` methods are provided as well.\n\n###lcd.write(val), lcd.print(val)\n\nThese take a buffer, string or integer and send it to the display. The `.write` and `print` methods are equivalent, aliases to the same function.\n\n###lcd.createChar(location, charmap)\n\nConfigures a custom character for code `location` (numbers 0–7). `charmap` can be a 40-byte buffer as in [the C++ method](http://arduino.cc/en/Reference/LiquidCrystalCreateChar), or an array of 5-bit binary strings, or a 40-character string with pixels denoted by any non-space (`\' \'`) character. These bits determine the 5x8 pixel pattern of the custom character.\n\n````javascript\nvar square = new Buffer("1f1f1f1f1f1f1f1f", \'hex\');\n\nvar smiley = [\n  \'00000\',\n  \'10001\',\n  \'00000\',\n  \'00000\',\n  \'10001\',\n  \'01110\',\n  \'00000\'\n];\n\nvar random =\n  ".  .." +\n  " . . " +\n  ". . ." +\n  " . . " +\n  " ..  " +\n  ".  . " +\n  " .  ." +\n  ".. .." ;\n\nlcd.createChar(0, square);\nlcd.createChar(1, smiley);\nlcd.createChar(2, random);\nlcd.setCursor(5,2);\nlcd.print(new Buffer("\\0\\1\\2\\1\\0"));    // NOTE: when `.print`ing a string, \'ascii\' turns \\0 into a space\n````\n\n##piezo\n\n````javascript\nvar led = new arduino.Piezo({\n  board: board,\n  pin: 13\n});\n````\nPin will default to 13.\n\n###piezo.note(note, duration)\n\nPlay a pre-calculated note for a given duration (in milliseconds).\n\n`note` must be a string, one of `d`, `e`, `f`, `g`, `a`, `b`, or `c` (must be lowercase)\n\n###piezo.tone(tone, duration)\n\nWrite a square wave to the piezo element.\n\n`tone` and `duration` must be integers. See code comments for math on `tone` generation.\n\n##button\n\n````javascript\nvar button = new arduino.Button({\n  board: board,\n  pin: 13\n});\n````\nPin will default to 13.\n\nButtons are simply EventEmitters. They will emit the events `up` and `down`. You may also access their `down` property.\n\n````javascript\nbutton.on(\'down\', function(){\n  // delete the database!\n  console.log(\'BOOM\');\n});\n\nsetInterval(function(){\n  console.log(button.down);\n}, 1000);\n````\n\n##ping\n\nSee: <http://arduino.cc/en/Tutorial/Ping>\n\n````javascript\nvar range = new arduino.Ping({\n  board: board\n});\n\nrange.on(\'read\', function () {\n  console.log("Distance to target (cm)", range.centimeters);\n});\n````\n\n##servo\n\n````javascript\nvar servo = new arduino.Servo({\n  board: board\n});\n\nservo.write(0);\nservo.write(180);\n````\nPin will default to 9. (Arduino PWM default)\n\n###servo.sweep()\n\nIncrement position from 0 to 180.\n\n###servo.write(pos)\n\nInstruct the servo to immediately go to a position from 0 to 180.\n\n##motor\n\n##potentiometer\n\n# protocol\n\nEach message sent to the Arduino board by the **board** class has 8 bytes.\n\nA full message looks like this:\n\n    !0113001.\n\n`!` Start\n`01` Command (digitalWrite)\n`13` Pin number\n`001` Value (high)\n`.` Stop\n\nI was drunk. It works.\n\n##command\n\nWhat is implemented right now:\n\n*  `00` pinMode\n*  `01` digitalWrite\n*  `02` digitalRead\n*  `03` analogWrite\n*  `04` analogRead\n*  `97` ping\n*  `98` servo\n*  `99` debug\n\n##pin\n\nPins can be sent as an integer or a string(`1`, `2`, `"3"`, `"A0"`)\n\n##value\n\n*  `board.LOW`(`0`)\n*  `board.HIGH`(`255`)\n*  integer/string from `0`-`255` for PWM pins\n\n# license\n\n(The MIT License)\n\nCopyright (c) 2011 Cam Pedersen <cam@onswipe.com>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \'Software\'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n',
+78 silly resolved     readmeFilename: 'README.md',
+78 silly resolved     bugs: { url: 'https://github.com/ecto/duino/issues' },
+78 silly resolved     _id: 'duino@0.0.8',
+78 silly resolved     _from: 'duino@0.0.8' },
+78 silly resolved   { name: 'express',
+78 silly resolved     description: 'Sinatra inspired web development framework',
+78 silly resolved     version: '3.4.0',
+78 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+78 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+78 silly resolved     dependencies:
+78 silly resolved      { connect: '2.9.0',
+78 silly resolved        commander: '1.2.0',
+78 silly resolved        'range-parser': '0.0.4',
+78 silly resolved        mkdirp: '0.3.5',
+78 silly resolved        cookie: '0.1.0',
+78 silly resolved        'buffer-crc32': '0.2.1',
+78 silly resolved        fresh: '0.2.0',
+78 silly resolved        methods: '0.0.1',
+78 silly resolved        send: '0.1.4',
+78 silly resolved        'cookie-signature': '1.0.1',
+78 silly resolved        debug: '*' },
+78 silly resolved     devDependencies:
+78 silly resolved      { ejs: '*',
+78 silly resolved        mocha: '*',
+78 silly resolved        jade: '0.30.0',
+78 silly resolved        hjs: '*',
+78 silly resolved        stylus: '*',
+78 silly resolved        should: '*',
+78 silly resolved        'connect-redis': '*',
+78 silly resolved        marked: '*',
+78 silly resolved        supertest: '0.6.0' },
+78 silly resolved     keywords:
+78 silly resolved      [ 'express',
+78 silly resolved        'framework',
+78 silly resolved        'sinatra',
+78 silly resolved        'web',
+78 silly resolved        'rest',
+78 silly resolved        'restful',
+78 silly resolved        'router',
+78 silly resolved        'app',
+78 silly resolved        'api' ],
+78 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/express' },
+78 silly resolved     main: 'index',
+78 silly resolved     bin: { express: './bin/express' },
+78 silly resolved     scripts: { prepublish: 'npm prune', test: 'make test' },
+78 silly resolved     engines: { node: '*' },
+78 silly resolved     readme: '![express logo](http://f.cl.ly/items/0V2S1n0K1i3y1c122g04/Screen%20Shot%202012-04-11%20at%209.59.42%20AM.png)\n\n  Fast, unopinionated, minimalist web framework for [node](http://nodejs.org). [![Build Status](https://secure.travis-ci.org/visionmedia/express.png)](http://travis-ci.org/visionmedia/express)\n\n```js\nvar express = require(\'express\');\nvar app = express();\n\napp.get(\'/\', function(req, res){\n  res.send(\'Hello World\');\n});\n\napp.listen(3000);\n```\n\n## Installation\n\n    $ npm install -g express\n\n## Quick Start\n\n The quickest way to get started with express is to utilize the executable `express(1)` to generate an application as shown below:\n\n Create the app:\n\n    $ npm install -g express\n    $ express /tmp/foo && cd /tmp/foo\n\n Install dependencies:\n\n    $ npm install\n\n Start the server:\n\n    $ node app\n\n## Features\n\n  * Built on [Connect](http://github.com/senchalabs/connect)\n  * Robust routing\n  * HTTP helpers (redirection, caching, etc)\n  * View system supporting 14+ template engines\n  * Content negotiation\n  * Focus on high performance\n  * Environment based configuration\n  * Executable for generating applications quickly\n  * High test coverage\n\n## Philosophy\n\n  The Express philosophy is to provide small, robust tooling for HTTP servers. Making\n  it a great solution for single page applications, web sites, hybrids, or public\n  HTTP APIs.\n\n  Built on Connect you can use _only_ what you need, and nothing more, applications\n  can be as big or as small as you like, even a single file. Express does\n  not force you to use any specific ORM or template engine. With support for over\n  14 template engines via [Consolidate.js](http://github.com/visionmedia/consolidate.js)\n  you can quickly craft your perfect framework.\n\n## More Information\n\n  * Join #express on freenode\n  * [Google Group](http://groups.google.com/group/express-js) for discussion\n  * Follow [tjholowaychuk](http://twitter.com/tjholowaychuk) on twitter for updates\n  * Visit the [Wiki](http://github.com/visionmedia/express/wiki)\n  * [Русскоязычная документация](http://jsman.ru/express/)\n  * Run express examples [online](https://runnable.com/express)\n\n## Viewing Examples\n\nClone the Express repo, then install the dev dependencies to install all the example / test suite deps:\n\n    $ git clone git://github.com/visionmedia/express.git --depth 1\n    $ cd express\n    $ npm install\n\nthen run whichever tests you want:\n\n    $ node examples/content-negotiation\n\n## Running Tests\n\nTo run the test suite first invoke the following command within the repo, installing the development dependencies:\n\n    $ npm install\n\nthen run the tests:\n\n    $ make test\n\n## Contributors\n\n```\nproject: express\ncommits: 3559\nactive : 468 days\nfiles  : 237\nauthors:\n 1891\tTj Holowaychuk          53.1%\n 1285\tvisionmedia             36.1%\n  182\tTJ Holowaychuk          5.1%\n   54\tAaron Heckmann          1.5%\n   34\tcsausdev                1.0%\n   26\tciaranj                 0.7%\n   21\tRobert Sköld            0.6%\n    6\tGuillermo Rauch         0.2%\n    3\tDav Glass               0.1%\n    3\tNick Poulden            0.1%\n    2\tRandy Merrill           0.1%\n    2\tBenny Wong              0.1%\n    2\tHunter Loftis           0.1%\n    2\tJake Gordon             0.1%\n    2\tBrian McKinney          0.1%\n    2\tRoman Shtylman          0.1%\n    2\tBen Weaver              0.1%\n    2\tDave Hoover             0.1%\n    2\tEivind Fjeldstad        0.1%\n    2\tDaniel Shaw             0.1%\n    1\tMatt Colyer             0.0%\n    1\tPau Ramon               0.0%\n    1\tPero Pejovic            0.0%\n    1\tPeter Rekdal Sunde      0.0%\n    1\tRaynos                  0.0%\n    1\tTeng Siong Ong          0.0%\n    1\tViktor Kelemen          0.0%\n    1\tctide                   0.0%\n    1\t8bitDesigner            0.0%\n    1\tisaacs                  0.0%\n    1\tmgutz                   0.0%\n    1\tpikeas                  0.0%\n    1\tshuwatto                0.0%\n    1\ttstrimple               0.0%\n    1\tewoudj                  0.0%\n    1\tAdam Sanderson          0.0%\n    1\tAndrii Kostenko         0.0%\n    1\tAndy Hiew               0.0%\n    1\tArpad Borsos            0.0%\n    1\tAshwin Purohit          0.0%\n    1\tBenjen                  0.0%\n    1\tDarren Torpey           0.0%\n    1\tGreg Ritter             0.0%\n    1\tGregory Ritter          0.0%\n    1\tJames Herdman           0.0%\n    1\tJim Snodgrass           0.0%\n    1\tJoe McCann              0.0%\n    1\tJonathan Dumaine        0.0%\n    1\tJonathan Palardy        0.0%\n    1\tJonathan Zacsh          0.0%\n    1\tJustin Lilly            0.0%\n    1\tKen Sato                0.0%\n    1\tMaciej Małecki          0.0%\n    1\tMasahiro Hayashi        0.0%\n```\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2009-2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+78 silly resolved     readmeFilename: 'Readme.md',
+78 silly resolved     bugs: { url: 'https://github.com/visionmedia/express/issues' },
+78 silly resolved     _id: 'express@3.4.0',
+78 silly resolved     _from: 'express@3.x' } ]
+79 info install duino@0.0.8 into /Users/basti/src/gate-opener
+80 info install express@3.4.0 into /Users/basti/src/gate-opener
+81 info installOne duino@0.0.8
+82 info installOne express@3.4.0
+83 verbose from cache /Users/basti/.npm/duino/0.0.8/package/package.json
+84 info /Users/basti/src/gate-opener/node_modules/duino unbuild
+85 verbose read json /Users/basti/src/gate-opener/node_modules/duino/package.json
+86 verbose from cache /Users/basti/.npm/express/3.4.0/package/package.json
+87 info /Users/basti/src/gate-opener/node_modules/express unbuild
+88 verbose read json /Users/basti/src/gate-opener/node_modules/express/package.json
+89 verbose tar unpack /Users/basti/.npm/duino/0.0.8/package.tgz
+90 silly lockFile 44cc0828-c-gate-opener-node-modules-duino tar:///Users/basti/src/gate-opener/node_modules/duino
+91 verbose lock tar:///Users/basti/src/gate-opener/node_modules/duino /Users/basti/.npm/44cc0828-c-gate-opener-node-modules-duino.lock
+92 silly lockFile 0b94280d-asti-npm-duino-0-0-8-package-tgz tar:///Users/basti/.npm/duino/0.0.8/package.tgz
+93 verbose lock tar:///Users/basti/.npm/duino/0.0.8/package.tgz /Users/basti/.npm/0b94280d-asti-npm-duino-0-0-8-package-tgz.lock
+94 verbose tar unpack /Users/basti/.npm/express/3.4.0/package.tgz
+95 silly lockFile ed69ec3a-gate-opener-node-modules-express tar:///Users/basti/src/gate-opener/node_modules/express
+96 verbose lock tar:///Users/basti/src/gate-opener/node_modules/express /Users/basti/.npm/ed69ec3a-gate-opener-node-modules-express.lock
+97 silly lockFile e74e76af-ti-npm-express-3-4-0-package-tgz tar:///Users/basti/.npm/express/3.4.0/package.tgz
+98 verbose lock tar:///Users/basti/.npm/express/3.4.0/package.tgz /Users/basti/.npm/e74e76af-ti-npm-express-3-4-0-package-tgz.lock
+99 silly gunzTarPerm modes [ '755', '644' ]
+100 silly gunzTarPerm modes [ '755', '644' ]
+101 silly gunzTarPerm extractEntry package.json
+102 silly gunzTarPerm extractEntry package.json
+103 silly gunzTarPerm extractEntry .npmignore
+104 silly gunzTarPerm extractEntry README.md
+105 silly gunzTarPerm extractEntry .npmignore
+106 silly gunzTarPerm extractEntry LICENSE
+107 silly gunzTarPerm extractEntry index.js
+108 silly gunzTarPerm extractEntry examples/adjustable-baud.js
+109 silly gunzTarPerm extractEntry index.js
+110 silly gunzTarPerm extractEntry test.js
+111 silly gunzTarPerm extractEntry examples/basic.js
+112 silly gunzTarPerm extractEntry examples/button.js
+113 silly gunzTarPerm extractEntry .travis.yml
+114 silly gunzTarPerm extractEntry bin/express
+115 silly gunzTarPerm extractEntry Makefile
+116 silly gunzTarPerm extractEntry examples/combination.js
+117 silly gunzTarPerm extractEntry examples/led.js
+118 silly gunzTarPerm extractEntry examples/analogled.js
+119 silly gunzTarPerm extractEntry examples/ping.js
+120 silly gunzTarPerm extractEntry examples/pir.js
+121 silly gunzTarPerm extractEntry examples/sensor-throttled.js
+122 silly gunzTarPerm extractEntry examples/sensor.js
+123 silly gunzTarPerm extractEntry examples/servo.js
+124 silly gunzTarPerm extractEntry examples/piezo.js
+125 silly gunzTarPerm extractEntry lib/board.js
+126 silly gunzTarPerm extractEntry lib/button.js
+127 silly gunzTarPerm extractEntry lib/lcd.js
+128 silly gunzTarPerm extractEntry lib/led.js
+129 silly gunzTarPerm extractEntry lib/piezo.js
+130 silly gunzTarPerm extractEntry lib/ping.js
+131 silly gunzTarPerm extractEntry lib/pir.js
+132 silly gunzTarPerm extractEntry lib/sensor.js
+133 silly gunzTarPerm extractEntry lib/servo.js
+134 silly gunzTarPerm extractEntry src/du.ino
+135 silly gunzTarPerm extractEntry lib/application.js
+136 silly gunzTarPerm extractEntry lib/express.js
+137 silly gunzTarPerm extractEntry lib/middleware.js
+138 silly gunzTarPerm extractEntry lib/request.js
+139 silly gunzTarPerm extractEntry lib/response.js
+140 silly gunzTarPerm extractEntry lib/utils.js
+141 silly gunzTarPerm extractEntry lib/view.js
+142 silly gunzTarPerm extractEntry lib/router/index.js
+143 silly gunzTarPerm extractEntry lib/router/route.js
+144 silly gunzTarPerm extractEntry History.md
+145 silly gunzTarPerm extractEntry Readme.md
+146 verbose read json /Users/basti/src/gate-opener/node_modules/duino/package.json
+147 silly lockFile 44cc0828-c-gate-opener-node-modules-duino tar:///Users/basti/src/gate-opener/node_modules/duino
+148 silly lockFile 44cc0828-c-gate-opener-node-modules-duino tar:///Users/basti/src/gate-opener/node_modules/duino
+149 silly lockFile 0b94280d-asti-npm-duino-0-0-8-package-tgz tar:///Users/basti/.npm/duino/0.0.8/package.tgz
+150 silly lockFile 0b94280d-asti-npm-duino-0-0-8-package-tgz tar:///Users/basti/.npm/duino/0.0.8/package.tgz
+151 info preinstall duino@0.0.8
+152 verbose from cache /Users/basti/src/gate-opener/node_modules/duino/package.json
+153 verbose readDependencies using package.json deps
+154 verbose from cache /Users/basti/src/gate-opener/node_modules/duino/package.json
+155 verbose readDependencies using package.json deps
+156 verbose cache add [ 'serialport@*', null ]
+157 verbose cache add name=undefined spec="serialport@*" args=["serialport@*",null]
+158 verbose parsed url { protocol: null,
+158 verbose parsed url   slashes: null,
+158 verbose parsed url   auth: null,
+158 verbose parsed url   host: null,
+158 verbose parsed url   port: null,
+158 verbose parsed url   hostname: null,
+158 verbose parsed url   hash: null,
+158 verbose parsed url   search: null,
+158 verbose parsed url   query: null,
+158 verbose parsed url   pathname: 'serialport@*',
+158 verbose parsed url   path: 'serialport@*',
+158 verbose parsed url   href: 'serialport@*' }
+159 verbose cache add name="serialport" spec="*" args=["serialport","*"]
+160 verbose parsed url { protocol: null,
+160 verbose parsed url   slashes: null,
+160 verbose parsed url   auth: null,
+160 verbose parsed url   host: null,
+160 verbose parsed url   port: null,
+160 verbose parsed url   hostname: null,
+160 verbose parsed url   hash: null,
+160 verbose parsed url   search: null,
+160 verbose parsed url   query: null,
+160 verbose parsed url   pathname: '*',
+160 verbose parsed url   path: '*',
+160 verbose parsed url   href: '*' }
+161 verbose addNamed [ 'serialport', '*' ]
+162 verbose addNamed [ null, '' ]
+163 silly lockFile 651e8adf-serialport serialport@*
+164 verbose lock serialport@* /Users/basti/.npm/651e8adf-serialport.lock
+165 verbose cache add [ 'colors@*', null ]
+166 verbose cache add name=undefined spec="colors@*" args=["colors@*",null]
+167 verbose parsed url { protocol: null,
+167 verbose parsed url   slashes: null,
+167 verbose parsed url   auth: null,
+167 verbose parsed url   host: null,
+167 verbose parsed url   port: null,
+167 verbose parsed url   hostname: null,
+167 verbose parsed url   hash: null,
+167 verbose parsed url   search: null,
+167 verbose parsed url   query: null,
+167 verbose parsed url   pathname: 'colors@*',
+167 verbose parsed url   path: 'colors@*',
+167 verbose parsed url   href: 'colors@*' }
+168 verbose cache add name="colors" spec="*" args=["colors","*"]
+169 verbose parsed url { protocol: null,
+169 verbose parsed url   slashes: null,
+169 verbose parsed url   auth: null,
+169 verbose parsed url   host: null,
+169 verbose parsed url   port: null,
+169 verbose parsed url   hostname: null,
+169 verbose parsed url   hash: null,
+169 verbose parsed url   search: null,
+169 verbose parsed url   query: null,
+169 verbose parsed url   pathname: '*',
+169 verbose parsed url   path: '*',
+169 verbose parsed url   href: '*' }
+170 verbose addNamed [ 'colors', '*' ]
+171 verbose addNamed [ null, '' ]
+172 silly lockFile 9ee7deec-colors colors@*
+173 verbose lock colors@* /Users/basti/.npm/9ee7deec-colors.lock
+174 silly addNameRange { name: 'serialport', range: '', hasData: false }
+175 silly addNameRange { name: 'colors', range: '', hasData: false }
+176 verbose url raw colors
+177 verbose url resolving [ 'https://registry.npmjs.org/', './colors' ]
+178 verbose url resolved https://registry.npmjs.org/colors
+179 info trying registry request attempt 1 at 14:03:51
+180 verbose etag "6A8GBHDKZ62PGBI3M1NRGH6L7"
+181 http GET https://registry.npmjs.org/colors
+182 verbose url raw serialport
+183 verbose url resolving [ 'https://registry.npmjs.org/', './serialport' ]
+184 verbose url resolved https://registry.npmjs.org/serialport
+185 info trying registry request attempt 1 at 14:03:51
+186 verbose etag "BK65H4F3YS46AGAO5YYXVSIU6"
+187 http GET https://registry.npmjs.org/serialport
+188 verbose read json /Users/basti/src/gate-opener/node_modules/express/package.json
+189 silly lockFile ed69ec3a-gate-opener-node-modules-express tar:///Users/basti/src/gate-opener/node_modules/express
+190 silly lockFile ed69ec3a-gate-opener-node-modules-express tar:///Users/basti/src/gate-opener/node_modules/express
+191 silly lockFile e74e76af-ti-npm-express-3-4-0-package-tgz tar:///Users/basti/.npm/express/3.4.0/package.tgz
+192 silly lockFile e74e76af-ti-npm-express-3-4-0-package-tgz tar:///Users/basti/.npm/express/3.4.0/package.tgz
+193 info preinstall express@3.4.0
+194 verbose from cache /Users/basti/src/gate-opener/node_modules/express/package.json
+195 verbose readDependencies using package.json deps
+196 verbose from cache /Users/basti/src/gate-opener/node_modules/express/package.json
+197 verbose readDependencies using package.json deps
+198 verbose cache add [ 'connect@2.9.0', null ]
+199 verbose cache add name=undefined spec="connect@2.9.0" args=["connect@2.9.0",null]
+200 verbose parsed url { protocol: null,
+200 verbose parsed url   slashes: null,
+200 verbose parsed url   auth: null,
+200 verbose parsed url   host: null,
+200 verbose parsed url   port: null,
+200 verbose parsed url   hostname: null,
+200 verbose parsed url   hash: null,
+200 verbose parsed url   search: null,
+200 verbose parsed url   query: null,
+200 verbose parsed url   pathname: 'connect@2.9.0',
+200 verbose parsed url   path: 'connect@2.9.0',
+200 verbose parsed url   href: 'connect@2.9.0' }
+201 verbose cache add name="connect" spec="2.9.0" args=["connect","2.9.0"]
+202 verbose parsed url { protocol: null,
+202 verbose parsed url   slashes: null,
+202 verbose parsed url   auth: null,
+202 verbose parsed url   host: null,
+202 verbose parsed url   port: null,
+202 verbose parsed url   hostname: null,
+202 verbose parsed url   hash: null,
+202 verbose parsed url   search: null,
+202 verbose parsed url   query: null,
+202 verbose parsed url   pathname: '2.9.0',
+202 verbose parsed url   path: '2.9.0',
+202 verbose parsed url   href: '2.9.0' }
+203 verbose addNamed [ 'connect', '2.9.0' ]
+204 verbose addNamed [ '2.9.0', '2.9.0' ]
+205 silly lockFile 50a8158d-connect-2-9-0 connect@2.9.0
+206 verbose lock connect@2.9.0 /Users/basti/.npm/50a8158d-connect-2-9-0.lock
+207 verbose cache add [ 'commander@1.2.0', null ]
+208 verbose cache add name=undefined spec="commander@1.2.0" args=["commander@1.2.0",null]
+209 verbose parsed url { protocol: null,
+209 verbose parsed url   slashes: null,
+209 verbose parsed url   auth: null,
+209 verbose parsed url   host: null,
+209 verbose parsed url   port: null,
+209 verbose parsed url   hostname: null,
+209 verbose parsed url   hash: null,
+209 verbose parsed url   search: null,
+209 verbose parsed url   query: null,
+209 verbose parsed url   pathname: 'commander@1.2.0',
+209 verbose parsed url   path: 'commander@1.2.0',
+209 verbose parsed url   href: 'commander@1.2.0' }
+210 verbose cache add name="commander" spec="1.2.0" args=["commander","1.2.0"]
+211 verbose parsed url { protocol: null,
+211 verbose parsed url   slashes: null,
+211 verbose parsed url   auth: null,
+211 verbose parsed url   host: null,
+211 verbose parsed url   port: null,
+211 verbose parsed url   hostname: null,
+211 verbose parsed url   hash: null,
+211 verbose parsed url   search: null,
+211 verbose parsed url   query: null,
+211 verbose parsed url   pathname: '1.2.0',
+211 verbose parsed url   path: '1.2.0',
+211 verbose parsed url   href: '1.2.0' }
+212 verbose addNamed [ 'commander', '1.2.0' ]
+213 verbose addNamed [ '1.2.0', '1.2.0' ]
+214 silly lockFile b6128374-commander-1-2-0 commander@1.2.0
+215 verbose lock commander@1.2.0 /Users/basti/.npm/b6128374-commander-1-2-0.lock
+216 verbose cache add [ 'range-parser@0.0.4', null ]
+217 verbose cache add name=undefined spec="range-parser@0.0.4" args=["range-parser@0.0.4",null]
+218 verbose parsed url { protocol: null,
+218 verbose parsed url   slashes: null,
+218 verbose parsed url   auth: null,
+218 verbose parsed url   host: null,
+218 verbose parsed url   port: null,
+218 verbose parsed url   hostname: null,
+218 verbose parsed url   hash: null,
+218 verbose parsed url   search: null,
+218 verbose parsed url   query: null,
+218 verbose parsed url   pathname: 'range-parser@0.0.4',
+218 verbose parsed url   path: 'range-parser@0.0.4',
+218 verbose parsed url   href: 'range-parser@0.0.4' }
+219 verbose cache add name="range-parser" spec="0.0.4" args=["range-parser","0.0.4"]
+220 verbose parsed url { protocol: null,
+220 verbose parsed url   slashes: null,
+220 verbose parsed url   auth: null,
+220 verbose parsed url   host: null,
+220 verbose parsed url   port: null,
+220 verbose parsed url   hostname: null,
+220 verbose parsed url   hash: null,
+220 verbose parsed url   search: null,
+220 verbose parsed url   query: null,
+220 verbose parsed url   pathname: '0.0.4',
+220 verbose parsed url   path: '0.0.4',
+220 verbose parsed url   href: '0.0.4' }
+221 verbose addNamed [ 'range-parser', '0.0.4' ]
+222 verbose addNamed [ '0.0.4', '0.0.4' ]
+223 silly lockFile 0760c556-range-parser-0-0-4 range-parser@0.0.4
+224 verbose lock range-parser@0.0.4 /Users/basti/.npm/0760c556-range-parser-0-0-4.lock
+225 verbose cache add [ 'mkdirp@0.3.5', null ]
+226 verbose cache add name=undefined spec="mkdirp@0.3.5" args=["mkdirp@0.3.5",null]
+227 verbose parsed url { protocol: null,
+227 verbose parsed url   slashes: null,
+227 verbose parsed url   auth: null,
+227 verbose parsed url   host: null,
+227 verbose parsed url   port: null,
+227 verbose parsed url   hostname: null,
+227 verbose parsed url   hash: null,
+227 verbose parsed url   search: null,
+227 verbose parsed url   query: null,
+227 verbose parsed url   pathname: 'mkdirp@0.3.5',
+227 verbose parsed url   path: 'mkdirp@0.3.5',
+227 verbose parsed url   href: 'mkdirp@0.3.5' }
+228 verbose cache add name="mkdirp" spec="0.3.5" args=["mkdirp","0.3.5"]
+229 verbose parsed url { protocol: null,
+229 verbose parsed url   slashes: null,
+229 verbose parsed url   auth: null,
+229 verbose parsed url   host: null,
+229 verbose parsed url   port: null,
+229 verbose parsed url   hostname: null,
+229 verbose parsed url   hash: null,
+229 verbose parsed url   search: null,
+229 verbose parsed url   query: null,
+229 verbose parsed url   pathname: '0.3.5',
+229 verbose parsed url   path: '0.3.5',
+229 verbose parsed url   href: '0.3.5' }
+230 verbose addNamed [ 'mkdirp', '0.3.5' ]
+231 verbose addNamed [ '0.3.5', '0.3.5' ]
+232 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+233 verbose lock mkdirp@0.3.5 /Users/basti/.npm/67d2df2a-mkdirp-0-3-5.lock
+234 verbose cache add [ 'buffer-crc32@0.2.1', null ]
+235 verbose cache add name=undefined spec="buffer-crc32@0.2.1" args=["buffer-crc32@0.2.1",null]
+236 verbose parsed url { protocol: null,
+236 verbose parsed url   slashes: null,
+236 verbose parsed url   auth: null,
+236 verbose parsed url   host: null,
+236 verbose parsed url   port: null,
+236 verbose parsed url   hostname: null,
+236 verbose parsed url   hash: null,
+236 verbose parsed url   search: null,
+236 verbose parsed url   query: null,
+236 verbose parsed url   pathname: 'buffer-crc32@0.2.1',
+236 verbose parsed url   path: 'buffer-crc32@0.2.1',
+236 verbose parsed url   href: 'buffer-crc32@0.2.1' }
+237 verbose cache add name="buffer-crc32" spec="0.2.1" args=["buffer-crc32","0.2.1"]
+238 verbose parsed url { protocol: null,
+238 verbose parsed url   slashes: null,
+238 verbose parsed url   auth: null,
+238 verbose parsed url   host: null,
+238 verbose parsed url   port: null,
+238 verbose parsed url   hostname: null,
+238 verbose parsed url   hash: null,
+238 verbose parsed url   search: null,
+238 verbose parsed url   query: null,
+238 verbose parsed url   pathname: '0.2.1',
+238 verbose parsed url   path: '0.2.1',
+238 verbose parsed url   href: '0.2.1' }
+239 verbose addNamed [ 'buffer-crc32', '0.2.1' ]
+240 verbose addNamed [ '0.2.1', '0.2.1' ]
+241 silly lockFile 057d0d26-buffer-crc32-0-2-1 buffer-crc32@0.2.1
+242 verbose lock buffer-crc32@0.2.1 /Users/basti/.npm/057d0d26-buffer-crc32-0-2-1.lock
+243 verbose cache add [ 'cookie@0.1.0', null ]
+244 verbose cache add name=undefined spec="cookie@0.1.0" args=["cookie@0.1.0",null]
+245 verbose parsed url { protocol: null,
+245 verbose parsed url   slashes: null,
+245 verbose parsed url   auth: null,
+245 verbose parsed url   host: null,
+245 verbose parsed url   port: null,
+245 verbose parsed url   hostname: null,
+245 verbose parsed url   hash: null,
+245 verbose parsed url   search: null,
+245 verbose parsed url   query: null,
+245 verbose parsed url   pathname: 'cookie@0.1.0',
+245 verbose parsed url   path: 'cookie@0.1.0',
+245 verbose parsed url   href: 'cookie@0.1.0' }
+246 verbose cache add name="cookie" spec="0.1.0" args=["cookie","0.1.0"]
+247 verbose parsed url { protocol: null,
+247 verbose parsed url   slashes: null,
+247 verbose parsed url   auth: null,
+247 verbose parsed url   host: null,
+247 verbose parsed url   port: null,
+247 verbose parsed url   hostname: null,
+247 verbose parsed url   hash: null,
+247 verbose parsed url   search: null,
+247 verbose parsed url   query: null,
+247 verbose parsed url   pathname: '0.1.0',
+247 verbose parsed url   path: '0.1.0',
+247 verbose parsed url   href: '0.1.0' }
+248 verbose addNamed [ 'cookie', '0.1.0' ]
+249 verbose addNamed [ '0.1.0', '0.1.0' ]
+250 silly lockFile b55e145e-cookie-0-1-0 cookie@0.1.0
+251 verbose lock cookie@0.1.0 /Users/basti/.npm/b55e145e-cookie-0-1-0.lock
+252 verbose cache add [ 'fresh@0.2.0', null ]
+253 verbose cache add name=undefined spec="fresh@0.2.0" args=["fresh@0.2.0",null]
+254 verbose parsed url { protocol: null,
+254 verbose parsed url   slashes: null,
+254 verbose parsed url   auth: null,
+254 verbose parsed url   host: null,
+254 verbose parsed url   port: null,
+254 verbose parsed url   hostname: null,
+254 verbose parsed url   hash: null,
+254 verbose parsed url   search: null,
+254 verbose parsed url   query: null,
+254 verbose parsed url   pathname: 'fresh@0.2.0',
+254 verbose parsed url   path: 'fresh@0.2.0',
+254 verbose parsed url   href: 'fresh@0.2.0' }
+255 verbose cache add name="fresh" spec="0.2.0" args=["fresh","0.2.0"]
+256 verbose parsed url { protocol: null,
+256 verbose parsed url   slashes: null,
+256 verbose parsed url   auth: null,
+256 verbose parsed url   host: null,
+256 verbose parsed url   port: null,
+256 verbose parsed url   hostname: null,
+256 verbose parsed url   hash: null,
+256 verbose parsed url   search: null,
+256 verbose parsed url   query: null,
+256 verbose parsed url   pathname: '0.2.0',
+256 verbose parsed url   path: '0.2.0',
+256 verbose parsed url   href: '0.2.0' }
+257 verbose addNamed [ 'fresh', '0.2.0' ]
+258 verbose addNamed [ '0.2.0', '0.2.0' ]
+259 silly lockFile 1a4cf0d3-fresh-0-2-0 fresh@0.2.0
+260 verbose lock fresh@0.2.0 /Users/basti/.npm/1a4cf0d3-fresh-0-2-0.lock
+261 verbose cache add [ 'methods@0.0.1', null ]
+262 verbose cache add name=undefined spec="methods@0.0.1" args=["methods@0.0.1",null]
+263 verbose parsed url { protocol: null,
+263 verbose parsed url   slashes: null,
+263 verbose parsed url   auth: null,
+263 verbose parsed url   host: null,
+263 verbose parsed url   port: null,
+263 verbose parsed url   hostname: null,
+263 verbose parsed url   hash: null,
+263 verbose parsed url   search: null,
+263 verbose parsed url   query: null,
+263 verbose parsed url   pathname: 'methods@0.0.1',
+263 verbose parsed url   path: 'methods@0.0.1',
+263 verbose parsed url   href: 'methods@0.0.1' }
+264 verbose cache add name="methods" spec="0.0.1" args=["methods","0.0.1"]
+265 verbose parsed url { protocol: null,
+265 verbose parsed url   slashes: null,
+265 verbose parsed url   auth: null,
+265 verbose parsed url   host: null,
+265 verbose parsed url   port: null,
+265 verbose parsed url   hostname: null,
+265 verbose parsed url   hash: null,
+265 verbose parsed url   search: null,
+265 verbose parsed url   query: null,
+265 verbose parsed url   pathname: '0.0.1',
+265 verbose parsed url   path: '0.0.1',
+265 verbose parsed url   href: '0.0.1' }
+266 verbose addNamed [ 'methods', '0.0.1' ]
+267 verbose addNamed [ '0.0.1', '0.0.1' ]
+268 silly lockFile 209c2920-methods-0-0-1 methods@0.0.1
+269 verbose lock methods@0.0.1 /Users/basti/.npm/209c2920-methods-0-0-1.lock
+270 verbose cache add [ 'send@0.1.4', null ]
+271 verbose cache add name=undefined spec="send@0.1.4" args=["send@0.1.4",null]
+272 verbose parsed url { protocol: null,
+272 verbose parsed url   slashes: null,
+272 verbose parsed url   auth: null,
+272 verbose parsed url   host: null,
+272 verbose parsed url   port: null,
+272 verbose parsed url   hostname: null,
+272 verbose parsed url   hash: null,
+272 verbose parsed url   search: null,
+272 verbose parsed url   query: null,
+272 verbose parsed url   pathname: 'send@0.1.4',
+272 verbose parsed url   path: 'send@0.1.4',
+272 verbose parsed url   href: 'send@0.1.4' }
+273 verbose cache add name="send" spec="0.1.4" args=["send","0.1.4"]
+274 verbose parsed url { protocol: null,
+274 verbose parsed url   slashes: null,
+274 verbose parsed url   auth: null,
+274 verbose parsed url   host: null,
+274 verbose parsed url   port: null,
+274 verbose parsed url   hostname: null,
+274 verbose parsed url   hash: null,
+274 verbose parsed url   search: null,
+274 verbose parsed url   query: null,
+274 verbose parsed url   pathname: '0.1.4',
+274 verbose parsed url   path: '0.1.4',
+274 verbose parsed url   href: '0.1.4' }
+275 verbose addNamed [ 'send', '0.1.4' ]
+276 verbose addNamed [ '0.1.4', '0.1.4' ]
+277 silly lockFile 555fd08a-send-0-1-4 send@0.1.4
+278 verbose lock send@0.1.4 /Users/basti/.npm/555fd08a-send-0-1-4.lock
+279 verbose cache add [ 'cookie-signature@1.0.1', null ]
+280 verbose cache add name=undefined spec="cookie-signature@1.0.1" args=["cookie-signature@1.0.1",null]
+281 verbose parsed url { protocol: null,
+281 verbose parsed url   slashes: null,
+281 verbose parsed url   auth: null,
+281 verbose parsed url   host: null,
+281 verbose parsed url   port: null,
+281 verbose parsed url   hostname: null,
+281 verbose parsed url   hash: null,
+281 verbose parsed url   search: null,
+281 verbose parsed url   query: null,
+281 verbose parsed url   pathname: 'cookie-signature@1.0.1',
+281 verbose parsed url   path: 'cookie-signature@1.0.1',
+281 verbose parsed url   href: 'cookie-signature@1.0.1' }
+282 verbose cache add name="cookie-signature" spec="1.0.1" args=["cookie-signature","1.0.1"]
+283 verbose parsed url { protocol: null,
+283 verbose parsed url   slashes: null,
+283 verbose parsed url   auth: null,
+283 verbose parsed url   host: null,
+283 verbose parsed url   port: null,
+283 verbose parsed url   hostname: null,
+283 verbose parsed url   hash: null,
+283 verbose parsed url   search: null,
+283 verbose parsed url   query: null,
+283 verbose parsed url   pathname: '1.0.1',
+283 verbose parsed url   path: '1.0.1',
+283 verbose parsed url   href: '1.0.1' }
+284 verbose addNamed [ 'cookie-signature', '1.0.1' ]
+285 verbose addNamed [ '1.0.1', '1.0.1' ]
+286 silly lockFile d4a1eba1-cookie-signature-1-0-1 cookie-signature@1.0.1
+287 verbose lock cookie-signature@1.0.1 /Users/basti/.npm/d4a1eba1-cookie-signature-1-0-1.lock
+288 verbose cache add [ 'debug@*', null ]
+289 verbose cache add name=undefined spec="debug@*" args=["debug@*",null]
+290 verbose parsed url { protocol: null,
+290 verbose parsed url   slashes: null,
+290 verbose parsed url   auth: null,
+290 verbose parsed url   host: null,
+290 verbose parsed url   port: null,
+290 verbose parsed url   hostname: null,
+290 verbose parsed url   hash: null,
+290 verbose parsed url   search: null,
+290 verbose parsed url   query: null,
+290 verbose parsed url   pathname: 'debug@*',
+290 verbose parsed url   path: 'debug@*',
+290 verbose parsed url   href: 'debug@*' }
+291 verbose cache add name="debug" spec="*" args=["debug","*"]
+292 verbose parsed url { protocol: null,
+292 verbose parsed url   slashes: null,
+292 verbose parsed url   auth: null,
+292 verbose parsed url   host: null,
+292 verbose parsed url   port: null,
+292 verbose parsed url   hostname: null,
+292 verbose parsed url   hash: null,
+292 verbose parsed url   search: null,
+292 verbose parsed url   query: null,
+292 verbose parsed url   pathname: '*',
+292 verbose parsed url   path: '*',
+292 verbose parsed url   href: '*' }
+293 verbose addNamed [ 'debug', '*' ]
+294 verbose addNamed [ null, '' ]
+295 silly lockFile 3ac45eff-debug debug@*
+296 verbose lock debug@* /Users/basti/.npm/3ac45eff-debug.lock
+297 verbose url raw commander/1.2.0
+298 verbose url resolving [ 'https://registry.npmjs.org/', './commander/1.2.0' ]
+299 verbose url resolved https://registry.npmjs.org/commander/1.2.0
+300 info trying registry request attempt 1 at 14:03:51
+301 http GET https://registry.npmjs.org/commander/1.2.0
+302 verbose url raw range-parser/0.0.4
+303 verbose url resolving [ 'https://registry.npmjs.org/', './range-parser/0.0.4' ]
+304 verbose url resolved https://registry.npmjs.org/range-parser/0.0.4
+305 info trying registry request attempt 1 at 14:03:51
+306 verbose etag "27HRUXP1C4FYWUHH9AKW9J76C"
+307 http GET https://registry.npmjs.org/range-parser/0.0.4
+308 verbose url raw cookie/0.1.0
+309 verbose url resolving [ 'https://registry.npmjs.org/', './cookie/0.1.0' ]
+310 verbose url resolved https://registry.npmjs.org/cookie/0.1.0
+311 info trying registry request attempt 1 at 14:03:51
+312 http GET https://registry.npmjs.org/cookie/0.1.0
+313 verbose url raw mkdirp/0.3.5
+314 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp/0.3.5' ]
+315 verbose url resolved https://registry.npmjs.org/mkdirp/0.3.5
+316 info trying registry request attempt 1 at 14:03:51
+317 verbose etag "EDKJRNRVHAFVXY32A3QT31WQ4"
+318 http GET https://registry.npmjs.org/mkdirp/0.3.5
+319 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+320 verbose url raw connect/2.9.0
+321 verbose url resolving [ 'https://registry.npmjs.org/', './connect/2.9.0' ]
+322 verbose url resolved https://registry.npmjs.org/connect/2.9.0
+323 info trying registry request attempt 1 at 14:04:21
+324 verbose etag "BMYU0F59PKAU2TU809X3GINQK"
+325 http GET https://registry.npmjs.org/connect/2.9.0
+326 verbose url raw buffer-crc32/0.2.1
+327 verbose url resolving [ 'https://registry.npmjs.org/', './buffer-crc32/0.2.1' ]
+328 verbose url resolved https://registry.npmjs.org/buffer-crc32/0.2.1
+329 info trying registry request attempt 1 at 14:04:21
+330 verbose etag "4JLO8SIQOKXMA94PVFN5E59WV"
+331 http GET https://registry.npmjs.org/buffer-crc32/0.2.1
+332 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+333 silly addNameRange { name: 'debug', range: '', hasData: false }
+334 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+335 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+336 verbose url raw send/0.1.4
+337 verbose url resolving [ 'https://registry.npmjs.org/', './send/0.1.4' ]
+338 verbose url resolved https://registry.npmjs.org/send/0.1.4
+339 info trying registry request attempt 1 at 14:04:21
+340 verbose etag "44MEX16XITH6HKKBT0BOK31OO"
+341 http GET https://registry.npmjs.org/send/0.1.4
+342 verbose url raw cookie-signature/1.0.1
+343 verbose url resolving [ 'https://registry.npmjs.org/', './cookie-signature/1.0.1' ]
+344 verbose url resolved https://registry.npmjs.org/cookie-signature/1.0.1
+345 info trying registry request attempt 1 at 14:04:21
+346 verbose etag "332BQXGWC1DJFGGZJ0ETUQXA6"
+347 http GET https://registry.npmjs.org/cookie-signature/1.0.1
+348 info trying registry request attempt 2 at 14:04:31
+349 verbose etag "6A8GBHDKZ62PGBI3M1NRGH6L7"
+350 http GET https://registry.npmjs.org/colors
+351 info trying registry request attempt 2 at 14:04:31
+352 verbose etag "BK65H4F3YS46AGAO5YYXVSIU6"
+353 http GET https://registry.npmjs.org/serialport
+354 info trying registry request attempt 2 at 14:04:31
+355 http GET https://registry.npmjs.org/commander/1.2.0
+356 info trying registry request attempt 2 at 14:04:31
+357 verbose etag "27HRUXP1C4FYWUHH9AKW9J76C"
+358 http GET https://registry.npmjs.org/range-parser/0.0.4
+359 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+360 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+361 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+362 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+363 verbose url raw fresh/0.2.0
+364 verbose url resolving [ 'https://registry.npmjs.org/', './fresh/0.2.0' ]
+365 verbose url resolved https://registry.npmjs.org/fresh/0.2.0
+366 info trying registry request attempt 1 at 14:04:51
+367 verbose etag "6CDQ014VE8MJLSGJOYMKCVKVG"
+368 http GET https://registry.npmjs.org/fresh/0.2.0
+369 info trying registry request attempt 2 at 14:05:01
+370 http GET https://registry.npmjs.org/cookie/0.1.0
+371 info trying registry request attempt 2 at 14:05:01
+372 verbose etag "EDKJRNRVHAFVXY32A3QT31WQ4"
+373 http GET https://registry.npmjs.org/mkdirp/0.3.5
+374 info trying registry request attempt 2 at 14:05:01
+375 verbose etag "BMYU0F59PKAU2TU809X3GINQK"
+376 http GET https://registry.npmjs.org/connect/2.9.0
+377 info trying registry request attempt 2 at 14:05:01
+378 verbose etag "4JLO8SIQOKXMA94PVFN5E59WV"
+379 http GET https://registry.npmjs.org/buffer-crc32/0.2.1
+380 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+381 verbose url raw methods/0.0.1
+382 verbose url resolving [ 'https://registry.npmjs.org/', './methods/0.0.1' ]
+383 verbose url resolved https://registry.npmjs.org/methods/0.0.1
+384 info trying registry request attempt 1 at 14:05:21
+385 verbose etag "D7BIME5C6Q45VILIKMWZAC09D"
+386 http GET https://registry.npmjs.org/methods/0.0.1
+387 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+388 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+389 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+390 verbose url raw debug
+391 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+392 verbose url resolved https://registry.npmjs.org/debug
+393 info trying registry request attempt 1 at 14:05:21
+394 verbose etag "BHGB14WW3U36Q48DRIX4RUQL1"
+395 http GET https://registry.npmjs.org/debug
+396 info trying registry request attempt 2 at 14:05:31
+397 verbose etag "44MEX16XITH6HKKBT0BOK31OO"
+398 http GET https://registry.npmjs.org/send/0.1.4
+399 info trying registry request attempt 2 at 14:05:31
+400 verbose etag "332BQXGWC1DJFGGZJ0ETUQXA6"
+401 http GET https://registry.npmjs.org/cookie-signature/1.0.1
+402 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+403 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+404 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+405 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+406 info trying registry request attempt 2 at 14:06:01
+407 verbose etag "6CDQ014VE8MJLSGJOYMKCVKVG"
+408 http GET https://registry.npmjs.org/fresh/0.2.0
+409 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+410 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+411 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+412 info trying registry request attempt 3 at 14:06:21
+413 verbose etag "6A8GBHDKZ62PGBI3M1NRGH6L7"
+414 http GET https://registry.npmjs.org/colors
+415 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+416 info trying registry request attempt 3 at 14:06:21
+417 verbose etag "BK65H4F3YS46AGAO5YYXVSIU6"
+418 http GET https://registry.npmjs.org/serialport
+419 info trying registry request attempt 2 at 14:06:31
+420 verbose etag "D7BIME5C6Q45VILIKMWZAC09D"
+421 http GET https://registry.npmjs.org/methods/0.0.1
+422 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+423 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+424 info trying registry request attempt 3 at 14:06:51
+425 http GET https://registry.npmjs.org/commander/1.2.0
+426 info trying registry request attempt 3 at 14:06:51
+427 verbose etag "27HRUXP1C4FYWUHH9AKW9J76C"
+428 http GET https://registry.npmjs.org/range-parser/0.0.4
+429 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+430 info trying registry request attempt 3 at 14:06:51
+431 http GET https://registry.npmjs.org/cookie/0.1.0
+432 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+433 info trying registry request attempt 2 at 14:07:01
+434 verbose etag "BHGB14WW3U36Q48DRIX4RUQL1"
+435 http GET https://registry.npmjs.org/debug
+436 silly registry.get cb [ 304, undefined ]
+437 verbose etag colors from cache
+438 info trying registry request attempt 3 at 14:07:21
+439 verbose etag "EDKJRNRVHAFVXY32A3QT31WQ4"
+440 http GET https://registry.npmjs.org/mkdirp/0.3.5
+441 silly registry.get cb [ 304, undefined ]
+442 verbose etag serialport from cache
+443 info trying registry request attempt 3 at 14:07:21
+444 verbose etag "BMYU0F59PKAU2TU809X3GINQK"
+445 http GET https://registry.npmjs.org/connect/2.9.0
+446 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+447 info trying registry request attempt 3 at 14:07:21
+448 verbose etag "4JLO8SIQOKXMA94PVFN5E59WV"
+449 http GET https://registry.npmjs.org/buffer-crc32/0.2.1
+450 silly lockFile b6128374-commander-1-2-0 commander@1.2.0
+451 silly lockFile b6128374-commander-1-2-0 commander@1.2.0
+452 silly lockFile b55e145e-cookie-0-1-0 cookie@0.1.0
+453 silly lockFile b55e145e-cookie-0-1-0 cookie@0.1.0
+454 silly registry.get cb [ 304, undefined ]
+455 verbose etag range-parser/0.0.4 from cache
+456 info trying registry request attempt 3 at 14:07:51
+457 verbose etag "44MEX16XITH6HKKBT0BOK31OO"
+458 http GET https://registry.npmjs.org/send/0.1.4
+459 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+460 silly registry.get cb [ 304, undefined ]
+461 verbose etag mkdirp/0.3.5 from cache
+462 info trying registry request attempt 3 at 14:07:51
+463 verbose etag "332BQXGWC1DJFGGZJ0ETUQXA6"
+464 http GET https://registry.npmjs.org/cookie-signature/1.0.1
+465 verbose about to build /Users/basti/src/gate-opener/node_modules/express
+466 info /Users/basti/src/gate-opener/node_modules/express unbuild
+467 verbose from cache /Users/basti/src/gate-opener/node_modules/express/package.json
+468 info preuninstall express@3.4.0
+469 info trying registry request attempt 3 at 14:07:51
+470 verbose etag "6CDQ014VE8MJLSGJOYMKCVKVG"
+471 http GET https://registry.npmjs.org/fresh/0.2.0
+472 silly registry.get cb [ 304, undefined ]
+473 verbose etag connect/2.9.0 from cache
+474 silly registry.get cb [ 304, undefined ]
+475 verbose etag buffer-crc32/0.2.1 from cache
+476 info uninstall express@3.4.0
+477 silly addNameRange number 2 { name: 'colors', range: '', hasData: true }
+478 silly addNameRange versions [ 'colors',
+478 silly addNameRange   [ '0.3.0', '0.5.0', '0.5.1', '0.6.0', '0.6.0-1', '0.6.1', '0.6.2' ] ]
+479 verbose addNamed [ 'colors', '0.6.2' ]
+480 verbose addNamed [ '0.6.2', '0.6.2' ]
+481 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+482 verbose lock colors@0.6.2 /Users/basti/.npm/1ce149d5-colors-0-6-2.lock
+483 silly addNameRange number 2 { name: 'serialport', range: '', hasData: true }
+484 silly addNameRange versions [ 'serialport',
+484 silly addNameRange   [ '0.1.0',
+484 silly addNameRange     '0.1.1',
+484 silly addNameRange     '0.1.3',
+484 silly addNameRange     '0.2.0',
+484 silly addNameRange     '0.2.2',
+484 silly addNameRange     '0.2.3',
+484 silly addNameRange     '0.2.4',
+484 silly addNameRange     '0.2.5',
+484 silly addNameRange     '0.2.6',
+484 silly addNameRange     '0.2.7',
+484 silly addNameRange     '0.2.8',
+484 silly addNameRange     '0.2.9',
+484 silly addNameRange     '0.3.0',
+484 silly addNameRange     '0.6.0',
+484 silly addNameRange     '0.6.1',
+484 silly addNameRange     '0.6.2',
+484 silly addNameRange     '0.6.3',
+484 silly addNameRange     '0.6.5',
+484 silly addNameRange     '0.6.6',
+484 silly addNameRange     '0.6.7',
+484 silly addNameRange     '0.7.0',
+484 silly addNameRange     '0.7.1',
+484 silly addNameRange     '0.7.2',
+484 silly addNameRange     '0.7.3',
+484 silly addNameRange     '0.7.4',
+484 silly addNameRange     '0.7.5',
+484 silly addNameRange     '1.0.0',
+484 silly addNameRange     '1.0.1',
+484 silly addNameRange     '1.0.2',
+484 silly addNameRange     '1.0.3',
+484 silly addNameRange     '1.0.4',
+484 silly addNameRange     '1.0.5',
+484 silly addNameRange     '1.0.6',
+484 silly addNameRange     '1.0.7',
+484 silly addNameRange     '1.0.8',
+484 silly addNameRange     '1.1.0',
+484 silly addNameRange     '1.1.1',
+484 silly addNameRange     '1.1.3',
+484 silly addNameRange     '1.2.0',
+484 silly addNameRange     '1.2.1',
+484 silly addNameRange     '1.2.2' ] ]
+485 verbose addNamed [ 'serialport', '1.2.2' ]
+486 verbose addNamed [ '1.2.2', '1.2.2' ]
+487 silly lockFile 8672641f-serialport-1-2-2 serialport@1.2.2
+488 verbose lock serialport@1.2.2 /Users/basti/.npm/8672641f-serialport-1-2-2.lock
+489 verbose true,/Users/basti/src/gate-opener/node_modules,/Users/basti/src/gate-opener/node_modules unbuild express@3.4.0
+490 verbose /Users/basti/src/gate-opener/node_modules/.bin,[object Object] binRoot
+491 verbose read json /Users/basti/.npm/colors/0.6.2/package/package.json
+492 verbose read json /Users/basti/.npm/serialport/1.2.2/package/package.json
+493 info postuninstall express@3.4.0
+494 verbose read json /Users/basti/.npm/range-parser/0.0.4/package/package.json
+495 verbose read json /Users/basti/.npm/mkdirp/0.3.5/package/package.json
+496 silly lockFile 1e2292af-js-org-connect-connect-2-9-0-tgz https://registry.npmjs.org/connect/-/connect-2.9.0.tgz
+497 verbose lock https://registry.npmjs.org/connect/-/connect-2.9.0.tgz /Users/basti/.npm/1e2292af-js-org-connect-connect-2-9-0-tgz.lock
+498 verbose read json /Users/basti/.npm/buffer-crc32/0.2.1/package/package.json
+499 verbose addRemoteTarball [ 'https://registry.npmjs.org/connect/-/connect-2.9.0.tgz',
+499 verbose addRemoteTarball   'ecf478b6f2723e72cf9a19d1c7d19d0b37b53746' ]
+500 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+501 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+502 silly lockFile 8672641f-serialport-1-2-2 serialport@1.2.2
+503 silly lockFile 8672641f-serialport-1-2-2 serialport@1.2.2
+504 info retry fetch attempt 1 at 14:08:21
+505 verbose fetch to= /var/folders/j8/r715jp9s49ggds711psdf74h0000gn/T/npm-84786/1381579701020-0.7591212631668895/tmp.tgz
+506 warn package.json range-parser@0.0.4 No repository field.
+507 silly lockFile 0760c556-range-parser-0-0-4 range-parser@0.0.4
+508 silly lockFile 0760c556-range-parser-0-0-4 range-parser@0.0.4
+509 silly lockFile 9ee7deec-colors colors@*
+510 silly lockFile 9ee7deec-colors colors@*
+511 silly lockFile 651e8adf-serialport serialport@*
+512 silly lockFile 651e8adf-serialport serialport@*
+513 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+514 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+515 http GET https://registry.npmjs.org/connect/-/connect-2.9.0.tgz
+516 silly registry.get cb [ 304, undefined ]
+517 verbose etag send/0.1.4 from cache
+518 silly resolved [ { name: 'colors',
+518 silly resolved     description: 'get colors in your node.js console like what',
+518 silly resolved     version: '0.6.2',
+518 silly resolved     author: { name: 'Marak Squires' },
+518 silly resolved     homepage: 'https://github.com/Marak/colors.js',
+518 silly resolved     bugs: { url: 'https://github.com/Marak/colors.js/issues' },
+518 silly resolved     keywords: [ 'ansi', 'terminal', 'colors' ],
+518 silly resolved     repository: { type: 'git', url: 'http://github.com/Marak/colors.js.git' },
+518 silly resolved     engines: { node: '>=0.1.90' },
+518 silly resolved     main: 'colors',
+518 silly resolved     readme: '# colors.js - get color and style in your node.js console ( and browser ) like what\n\n<img src="http://i.imgur.com/goJdO.png" border = "0"/>\n\n\n## Installation\n\n    npm install colors\n\n## colors and styles!\n\n- bold\n- italic\n- underline\n- inverse\n- yellow\n- cyan\n- white\n- magenta\n- green\n- red\n- grey\n- blue\n- rainbow\n- zebra\n- random\n\n## Usage\n\n``` js\nvar colors = require(\'./colors\');\n\nconsole.log(\'hello\'.green); // outputs green text\nconsole.log(\'i like cake and pies\'.underline.red) // outputs red underlined text\nconsole.log(\'inverse the color\'.inverse); // inverses the color\nconsole.log(\'OMG Rainbows!\'.rainbow); // rainbow (ignores spaces)\n```\n\n# Creating Custom themes\n\n```js\n\nvar colors = require(\'colors\');\n\ncolors.setTheme({\n  silly: \'rainbow\',\n  input: \'grey\',\n  verbose: \'cyan\',\n  prompt: \'grey\',\n  info: \'green\',\n  data: \'grey\',\n  help: \'cyan\',\n  warn: \'yellow\',\n  debug: \'blue\',\n  error: \'red\'\n});\n\n// outputs red text\nconsole.log("this is an error".error);\n\n// outputs yellow text\nconsole.log("this is a warning".warn);\n```\n\n\n### Contributors \n\nMarak (Marak Squires)\nAlexis Sellier (cloudhead)\nmmalecki (Maciej Małecki)\nnicoreed (Nico Reed)\nmorganrallen (Morgan Allen)\nJustinCampbell (Justin Campbell)\nded (Dustin Diaz)\n\n\n####  , Marak Squires , Justin Campbell, Dustin Diaz (@ded)\n',
+518 silly resolved     readmeFilename: 'ReadMe.md',
+518 silly resolved     _id: 'colors@0.6.2',
+518 silly resolved     _from: 'colors@*' },
+518 silly resolved   { name: 'serialport',
+518 silly resolved     version: '1.2.2',
+518 silly resolved     description: 'Welcome your robotic javascript overlords. Better yet, program them!',
+518 silly resolved     author:
+518 silly resolved      { name: 'Chris Williams',
+518 silly resolved        email: 'voodootikigod@gmail.com',
+518 silly resolved        url: 'http://www.voodootikigod.com' },
+518 silly resolved     main: './serialport',
+518 silly resolved     repository:
+518 silly resolved      { type: 'git',
+518 silly resolved        url: 'git://github.com/voodootikigod/node-serialport.git' },
+518 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+518 silly resolved     dependencies:
+518 silly resolved      { bindings: '1.1.1',
+518 silly resolved        async: '0.1.18',
+518 silly resolved        sf: '0.1.6',
+518 silly resolved        optimist: '~0.3.4' },
+518 silly resolved     devDependencies: { mocha: '*', chai: '*' },
+518 silly resolved     engines: { node: '>= 0.10.0' },
+518 silly resolved     bin:
+518 silly resolved      { serialportlist: './bin/serialportList.js',
+518 silly resolved        serialportterm: './bin/serialportTerminal.js' },
+518 silly resolved     scripts:
+518 silly resolved      { test: 'mocha -R spec -t 60s -s 60s',
+518 silly resolved        install: 'node-gyp rebuild' },
+518 silly resolved     gypfile: true,
+518 silly resolved     contributors:
+518 silly resolved      [ [Object],
+518 silly resolved        [Object],
+518 silly resolved        [Object],
+518 silly resolved        [Object],
+518 silly resolved        [Object],
+518 silly resolved        [Object],
+518 silly resolved        [Object],
+518 silly resolved        [Object],
+518 silly resolved        [Object] ],
+518 silly resolved     readme: '```\n  eeeee eeeee eeeee eeee       e  eeeee \n  8   8 8  88 8   8 8          8  8   " \n  8e  8 8   8 8e  8 8eee       8e 8eeee \n  88  8 8   8 88  8 88      e  88    88 \n  88  8 8eee8 88ee8 88ee 88 8ee88 8ee88\n\n  eeeee eeee eeeee  e  eeeee e     eeeee eeeee eeeee eeeee \n  8   " 8    8   8  8  8   8 8     8   8 8  88 8   8   8   \n  8eeee 8eee 8eee8e 8e 8eee8 8e    8eee8 8   8 8eee8e  8e  \n     88 88   88   8 88 88  8 88    88    8   8 88   8  88  \n  8ee88 88ee 88   8 88 88  8 88eee 88    8eee8 88   8  88\n```\n\nVersion: 1.1.3 - Released July 29, 2013\n\n*****\n\nImagine a world where you can write JavaScript to control blenders, lights, security systems, or even robots. Yes, I said robots. That world is here and now with node-serialport. It provides a very simple interface to the low level serial port code necessary to program [Arduino](http://www.arduino.cc/) chipsets, [X10](http://www.smarthome.com/manuals/protocol.txt) wireless communications, or even the rising [Z-Wave](http://www.z-wave.com/modules/ZwaveStart/) and [Zigbee](http://www.zigbee.org/) standards. The physical world is your oyster with this goodie. For a full break down of why we made this, please read [NodeBots - The Rise of JS Robotics](http://www.voodootikigod.com/nodebots-the-rise-of-js-robotics).\n\n*****\n\nRobots, you say?\n================\n\nThis library is admittedly a base level toolkit for building amazing things with real world (including robots). Here are a couple of those amazing things that leverage node-serialport:\n\n* [firmata](https://github.com/jgautier/firmata) Talk natively to Arduino using the firmata protocol.\n* [tmpad](http://tmpvar.com/project/tmpad/) [source](https://github.com/tmpvar/tmpad) - a DIY midi pad using infrared, arduino, and nodejs. [Video](http://vimeo.com/34575470)\n* [duino](https://github.com/ecto/duino) - A higher level framework for working with Arduinos in node.js.\n* [Arduino Drinking Game Extravaganza](http://jsconf.eu/2011/arduino_drinking_game_extravaganza.html) - AKA "The Russian" a hexidecimal drinking game for geeks by Uxebu presented at JSConf EU 2011.\n* [Arduino controlling popcorn.js](https://gist.github.com/968773) - Controlling a popcorn.js video with an Arduino kit.\n* [Robotic JavaScript](http://jsconf.eu/2010/speaker/livingroombindmotion_function.html) - The first live presentation of the node-serialport code set as presented at JSConf EU 2010.\n* [devicestack](https://github.com/adrai/devicestack) - This module helps you to represent a device and its protocol.\n* [reflecta](https://github.com/jbeavers/reflecta) A communication protocol that combines Arduino Libraries and NodeJS into an integrated system.\n\nFor getting started with node-serialport, we recommend you begin with the following articles:\n\n* [Arduino Node Security Sensor Hacking](http://nexxylove.tumblr.com/post/20159263403/arduino-node-security-sensor-hacking) - A great all around "how do I use this" article.\n* [NodeBots - The Rise of JS Robotics](http://www.voodootikigod.com/nodebots-the-rise-of-js-robotics) - A survey article of why one would want to program robots in JS.\n* [Johnny-Five Getting Started Guide](https://github.com/rwldrn/johnny-five#setup-and-assemble-arduino) - Introduction to using the high level Johnny-Five library (awesome).\n\nHow To Use\n==========\n\nUsing node-serialport is pretty easy because it is pretty basic. It provides you with the building block to make great things, it is not a complete solution - just a cog in the (world domination) machine.\n\nTo Install\n----------\n\nThis assumes you have everything on your system necessary to compile ANY native module for Node.js. This may not be the case, though, so please ensure the following are true for your system before filing an issue about "Does not install". For all operatings systems, please ensure you have Python 2.x installed AND not 3.0, node-gyp (what we use to compile) requires Python 2.x.\n\n### Windows:\n\n * Install Windows 7 or Windows 8.\n * Install [Visual Studio Express 2013 Preview for Windows Desktop](http://www.microsoft.com/visualstudio/eng/2013-downloads#d-2013-express) or [Visual Studio Express 2012 for Windows Desktop](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-windows-desktop).\n * If you are hacking on an Arduino, be sure to install [the drivers](http://arduino.cc/en/Guide/windows#toc4).\n * Install [node.js 0.10.x](http://nodejs.org/) matching the bitness (32 or 64) of your operating system.\n * Install [Python 2.7.5](http://www.python.org/download/releases/2.7.5/) matching the bitness of your operating system.  For any questions, please refer to their [FAQ](http://docs.python.org/2/faq/windows.html). Default settings are perfect.\n * Open the \'Visual Studio Command Prompt\' and add Python to the path.  When installing serialport, you need to tell the build system (known as node-gyp) that you are using a newer compiler by using:\n\n```Batchfile\n   set path=%path%;C:\\Python27\n   npm install serialport --msvs_version=2012\n```\n\nThis switch works for both Visual Studio Express 2012 and 2013.\n\n### Mac OS X:\n\nEnsure that you have at a minimum the xCode Command Line Tools installed appropriate for your system configuration. If you recently upgraded the OS, it probably removed your installation of Command Line Tools, please verify before submitting a ticket.\n\n### Desktop (Debian/Ubuntu) Linux:\n\nYou know what you need for you system, basically your appropriate analog of build-essential. Keep rocking!\n\n\n```\n   sudo apt-get install build-essential\n   npm install serialport\n```\n\n### Raspberry Pi Linux:\n\n * Starting with a a vanilla New Out of the Box Software (NOOBS) Raspbian image (currently tested: 5/25/2013)\n * Log into your Raspberry Pi through whatever means works best and ensure you are on a terminal prompt for the remaining steps. This could be local or through an SSH (or a serial connection if you like).\n * Issue the following commands to ensure you are up to date:\n```\n   sudo apt-get update\n   sudo apt-get upgrade -y\n```\n * Download and install node.js:\n```\n   wget http://nodejs.org/dist/v0.10.12/node-v0.10.12-linux-arm-pi.tar.gz\n   tar xvfz node-v0.10.12-linux-arm-pi.tar.gz\n   sudo mv node-v0.10.12-linux-arm-pi /opt/node/\n```\n * Set up your paths correctly:\n```\n   echo \'export PATH="$PATH:/opt/node/bin"\' >> ~/.bashrc\n   source ~/.bashrc\n```\n * Install using npm, note this will take a while as it is actually compiling code and that ARM processor is getting a workout.\n```\n   npm install serialport\n```\n\nTo Use\n------\n\nOpening a serial port:\n\n```js\nvar SerialPort = require("serialport").SerialPort\nvar serialPort = new SerialPort("/dev/tty-usbserial1", {\n  baudrate: 57600\n});\n```\n  \nWhen opening a serial port, you can specify (in this order).\n\n1. Path to Serial Port - required.\n1. Options - optional and described below.\n\nThe options object allows you to pass named options to the serial port during initialization. The valid attributes for the options object are the following:\n\n* baudrate: Baud Rate, defaults to 9600. Must be one of: 115200, 57600, 38400, 19200, 9600, 4800, 2400, 1800, 1200, 600, 300, 200, 150, 134, 110, 75, or 50.\n* databits: Data Bits, defaults to 8. Must be one of: 8, 7, 6, or 5.\n* stopbits: Stop Bits, defaults to 1. Must be one of: 1 or 2.\n* parity: Parity, defaults to \'none\'. Must be one of: \'none\', \'even\', \'mark\', \'odd\', \'space\'\n* buffersize: Size of read buffer, defaults to 255. Must be an integer value.\n* parser: The parser engine to use with read data, defaults to rawPacket strategy which just emits the raw buffer as a "data" event. Can be any function that accepts EventEmitter as first parameter and the raw buffer as the second parameter.\n\n**Note, we have added support for either all lowercase OR camelcase of the options (thanks @jagautier), use whichever style you prefer.**\n\nopen event\n----------\n\nYou MUST wait for the open event to be emitted before reading/writing to the serial port. The open happens asynchronously so installing \'data\' listeners and writing \nbefore the open event might result in... nothing at all.\n\nAssuming you are connected to a serial console, you would for example:\n\n```js\nserialPort.on("open", function () {\n  console.log(\'open\');\n  serialPort.on(\'data\', function(data) {\n    console.log(\'data received: \' + data);\n  });  \n  serialPort.write("ls\\n", function(err, results) {\n    console.log(\'err \' + err);\n    console.log(\'results \' + results);\n  });  \n});\n```\n\nYou can also call the open function, in this case instanciate the serialport with an additional flag.\n\n```js\nvar SerialPort = require("serialport").SerialPort\nvar serialPort = new SerialPort("/dev/tty-usbserial1", {\n  baudrate: 57600\n}, false); // this is the openImmediately flag [default is true]\n\nserialPort.open(function () {\n  console.log(\'open\');\n  serialPort.on(\'data\', function(data) {\n    console.log(\'data received: \' + data);\n  });  \n  serialPort.write("ls\\n", function(err, results) {\n    console.log(\'err \' + err);\n    console.log(\'results \' + results);\n  });  \n});\n```\n\nList Ports\n----------\n\nYou can also list the ports along with some metadata as well.\n\n```js\nserialport.list(function (err, ports) {\n  ports.forEach(function(port) {\n    console.log(port.comName);\n    console.log(port.pnpId);\n    console.log(port.manufacturer);\n  });\n});\n```\n\nParsers\n-------\n\nOut of the box, node-serialport provides two parsers one that simply emits the raw buffer as a data event and the other which provides familiar "readline" style parsing. To use the readline parser, you must provide a delimiter as such:\n\n```js\nvar serialport = require("serialport");\nvar SerialPort = serialport.SerialPort; // localize object constructor\n\nvar sp = new SerialPort("/dev/tty-usbserial1", { \n  parser: serialport.parsers.readline("\\n") \n});\n```\n\nTo use the raw parser, you just provide the function definition (or leave undefined):\n\n```js\nvar serialport = require("serialport");\nvar SerialPort = serialport.SerialPort; // localize object constructor\n\nvar sp = new SerialPort("/dev/tty-usbserial1", { \n  parser: serialport.parsers.raw\n});\n```\n\n\nYou can get updates of new data from the Serial Port as follows:\n\n```js\nserialPort.on("data", function (data) {\n  sys.puts("here: "+data);\n});\n```\n\nYou can write to the serial port by sending a string or buffer to the write method as follows:\n\n```js\nserialPort.write("OMG IT WORKS\\r");\n```\n\nEnjoy and do cool things with this code.',
+518 silly resolved     readmeFilename: 'README.md',
+518 silly resolved     bugs: { url: 'https://github.com/voodootikigod/node-serialport/issues' },
+518 silly resolved     _id: 'serialport@1.2.2',
+518 silly resolved     _from: 'serialport@*' } ]
+519 info install colors@0.6.2 into /Users/basti/src/gate-opener/node_modules/duino
+520 info install serialport@1.2.2 into /Users/basti/src/gate-opener/node_modules/duino
+521 info installOne colors@0.6.2
+522 info installOne serialport@1.2.2
+523 silly lockFile 057d0d26-buffer-crc32-0-2-1 buffer-crc32@0.2.1
+524 silly lockFile 057d0d26-buffer-crc32-0-2-1 buffer-crc32@0.2.1
+525 info trying registry request attempt 3 at 14:08:21
+526 verbose etag "D7BIME5C6Q45VILIKMWZAC09D"
+527 http GET https://registry.npmjs.org/methods/0.0.1
+528 verbose from cache /Users/basti/.npm/colors/0.6.2/package/package.json
+529 info /Users/basti/src/gate-opener/node_modules/duino/node_modules/colors unbuild
+530 verbose read json /Users/basti/src/gate-opener/node_modules/duino/node_modules/colors/package.json
+531 verbose from cache /Users/basti/.npm/serialport/1.2.2/package/package.json
+532 info /Users/basti/src/gate-opener/node_modules/duino/node_modules/serialport unbuild
+533 verbose read json /Users/basti/src/gate-opener/node_modules/duino/node_modules/serialport/package.json
+534 silly registry.get cb [ 304, undefined ]
+535 verbose etag cookie-signature/1.0.1 from cache
+536 error network getaddrinfo ENOTFOUND
+536 error network This is most likely not a problem with npm itself
+536 error network and is related to network connectivity.
+536 error network In most cases you are behind a proxy or have bad network settings.
+536 error network
+536 error network If you are behind a proxy, please make sure that the
+536 error network 'proxy' config is set properly.  See: 'npm help config'
+537 error System Darwin 12.5.0
+538 error command "/usr/local/Cellar/node/0.10.12/bin/node" "/usr/local/bin/npm" "install"
+539 error cwd /Users/basti/src/gate-opener
+540 error node -v v0.10.12
+541 error npm -v 1.2.32
+542 error syscall getaddrinfo
+543 error code ENOTFOUND
+544 error errno ENOTFOUND
+545 verbose exit [ 1, true ]
